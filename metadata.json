@@ -1,0 +1,10 @@
+{
+  "name": "SecretLogs - Android Private Diary",
+  "description": "Offline, account-free private diary for Android with biometric lock, AES local encryption, and secure PDF/JPEG export.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

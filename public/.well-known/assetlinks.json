@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.secretlogs.diary",
+      "sha256_cert_fingerprints": [
+        "14:6D:E9:7D:0F:52:CC:77:47:31:6E:86:F5:4B:B4:B0:BC:AE:07:7B:52:16:4E:86:46:1A:61:05:EC:07:99:B6"
+      ]
+    }
+  }
+]

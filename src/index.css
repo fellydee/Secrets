@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Space Mono", "JetBrains Mono", monospace;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-handwriting: "Caveat", cursive;
+
+  --color-brand: #E83375;
+  --color-brand-hover: #D62465;
+  --color-brand-light: #FDEEF4;
+  --color-brand-border: #F8CADB;
+  --color-surface-canvas: #F4F3F7;
+  --color-surface-card: #FFFFFF;
+  --color-surface-subtle: #ECE9F2;
+  --color-text-primary: #1D1826;
+  --color-text-muted: #7E778B;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Modern mobile touch optimizations */
+html, body {
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #ECEBF0;
+  color: #1D1826;
+}
+
+/* One Year aesthetic: 365-day dotted matrix */
+.dotted-year-grid {
+  background-size: 16px 16px;
+  background-image: radial-gradient(circle, #D1CBD9 1.5px, transparent 1.5px);
+}
+
+/* Journal paper styling for export */
+.journal-lined-paper {
+  background-color: #faf9f6;
+  background-image: repeating-linear-gradient(transparent, transparent 31px, rgba(232, 51, 117, 0.12) 31px, rgba(232, 51, 117, 0.12) 32px);
+  line-height: 32px;
+}
+
+.journal-grid-paper {
+  background-color: #F6F5F9;
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(232, 51, 117, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(232, 51, 117, 0.1) 1px, transparent 1px);
+}
+
+.journal-dark-paper {
+  background-color: #140E1B;
+  background-size: 24px 24px;
+  background-image: 
+    radial-gradient(circle, rgba(232, 51, 117, 0.25) 1px, transparent 1px);
+}

@@ -1,0 +1,31 @@
+{
+  "packageId": "com.secretlogs.diary",
+  "host": "ais-dev-oxri7m5p3fgkzzhxvxhunp-719638703145.asia-northeast1.run.app",
+  "name": "SecretLogs - Diary & Notes",
+  "launcherName": "SecretLogs",
+  "display": "standalone",
+  "themeColor": "#E83375",
+  "navigationColor": "#0E0E11",
+  "backgroundColor": "#F4F3F7",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "/pwa-512x512.png",
+  "maskableIconUrl": "/pwa-maskable-512x512.png",
+  "appVersion": "1.0.0",
+  "appVersionCode": 1,
+  "minSdkVersion": 21,
+  "targetSdkVersion": 35,
+  "orientation": "portrait",
+  "shortcuts": [
+    {
+      "name": "New Entry",
+      "shortName": "New",
+      "url": "/?action=new",
+      "icon": "/pwa-192x192.png"
+    }
+  ],
+  "signing": {
+    "file": "./android.keystore",
+    "alias": "android"
+  }
+}
